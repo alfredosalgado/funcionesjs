@@ -5,18 +5,19 @@ const c = document.getElementById("green");
 const d = document.getElementById("yellow");
 
 // Función para asignar el elemento y color
-function pintar(elemento, color) {
+function colores(elemento, color) {
     elemento.style.backgroundColor = color;
 }
 
 // Asignar eventos de clic para cambiar a negro
-a.addEventListener("click", () => pintar(a, 'black'));
-b.addEventListener("click", () => pintar(b, 'black'));
-c.addEventListener("click", () => pintar(c, 'black'));
-d.addEventListener("click", () => pintar(d, 'black'));
+a.addEventListener("click", () => colores(a, 'black'));
+b.addEventListener("click", () => colores(b, 'black'));
+c.addEventListener("click", () => colores(c, 'black'));
+d.addEventListener("click", () => colores(d, 'black'));
 
 // Div especial que cambia con teclas
 const keyDiv = document.getElementById('key');
+
 document.addEventListener('keydown', function(event) {
     if (event.key === 'a' || event.key === 'A') {
         keyDiv.style.backgroundColor = 'pink'; // Rosado
