@@ -20,11 +20,11 @@ const keyDiv = document.getElementById('key');
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'a' || event.key === 'A') {
-        keyDiv.style.backgroundColor = 'pink'; // Rosado
+        colores(keyDiv, 'pink'); // Cambia a rosado
     } else if (event.key === 's' || event.key === 'S') {
-        keyDiv.style.backgroundColor = 'orange'; // Naranjo
+        colores(keyDiv, 'orange'); // Cambia a naranjo
     } else if (event.key === 'd' || event.key === 'D') {
-        keyDiv.style.backgroundColor = 'lightblue'; // Celeste
+        colores(keyDiv, 'lightblue'); // Cambia a celeste
     } else if (event.key === 'q' || event.key === 'Q') {
         createDiv('purple'); // Morado
     } else if (event.key === 'w' || event.key === 'W') {
