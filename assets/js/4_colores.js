@@ -17,24 +17,21 @@ d.addEventListener("click", () => pintar(d, 'black'));
 
 // Div especial que cambia con teclas
 const keyDiv = document.getElementById('key');
-
 document.addEventListener('keydown', function(event) {
-  const pressedKey = event.key.toLowerCase(); // Normaliza la tecla a minúsculas, en caso que se escriba con mayusculas, para que siempre funcione.
-  if (pressedKey === 'a') {
-      keyDiv.style.backgroundColor = 'pink'; // Rosado
-  } else if (pressedKey === 's') {
-      keyDiv.style.backgroundColor = 'orange'; // Naranjo
-  } else if (pressedKey === 'd') {
-      keyDiv.style.backgroundColor = 'lightblue'; // Celeste
-  } else if (pressedKey === 'q') {
-      createDiv('purple'); // Morado
-  } else if (pressedKey === 'w') {
-      createDiv('gray'); // Gris
-  } else if (pressedKey === 'e') {
-      createDiv('brown'); // Café
-  }
+    if (event.key === 'a' || event.key === 'A') {
+        keyDiv.style.backgroundColor = 'pink'; // Rosado
+    } else if (event.key === 's' || event.key === 'S') {
+        keyDiv.style.backgroundColor = 'orange'; // Naranjo
+    } else if (event.key === 'd' || event.key === 'D') {
+        keyDiv.style.backgroundColor = 'lightblue'; // Celeste
+    } else if (event.key === 'q' || event.key === 'Q') {
+        createDiv('purple'); // Morado
+    } else if (event.key === 'w' || event.key === 'W') {
+        createDiv('gray'); // Gris
+    } else if (event.key === 'e' || event.key === 'E') {
+        createDiv('brown'); // Café
+    }
 });
-
 
 // Función para crear nuevos divs
 function createDiv(color) {
